@@ -1,6 +1,8 @@
 package Clase1;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -16,10 +18,25 @@ public class Lectura {
 	PrintStream ps;
 	
 	
+public String entradaDeDatos() {
+		
+		String cadena = "";
+		try {
+			int Byte = -1;
+			while(    (Byte = System.in.read())  != '\n'    ) 
+			{
+				if( Byte != 13 )
+					cadena += (char)Byte;
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return cadena;
+	}
 	
-	
-	public Lectura()
-	{   
+	public Lectura(){   
 		//intermedio
 		ps= new PrintStream( System.out);
 		
@@ -50,15 +67,23 @@ public class Lectura {
 		//System.out.println();
 		
 		ps.println("holaa");
-		ps.printf("El numero elejido es: %d y su nombre: %s en su cuenta tiene; %.2f $ ",8,"PEPE",655.7);
+		ps.printf("El numero elejido es: %d y su nombre: %s en su cuenta tiene; %.2f $ /n ",8,"PEPE",655.7);
 	
-		File archivo = new File("error.log");
+File archivo = new File( "error.log" );
 		
-        PrintStream error = new PrintStream(  );
-		System.setErr(error);	
+		//crea un canal de comunicacion de SALIDA,  destino: ARCHIVO(file)
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream( archivo, true );
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		PrintStream error = new PrintStream( fos );
+		System.setErr( error );
+
 		
 		System.err.println("esto es un error critico");
-	}
 	
-	
+	}	
 }
