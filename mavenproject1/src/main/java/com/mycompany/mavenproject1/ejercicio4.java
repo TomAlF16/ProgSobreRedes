@@ -3,26 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.mavenproject1;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
-import java.io.PrintStream;
 
 /**
  *
  * @author tafav
  */
-public class Ejercicio1 {
-    
-   public Double ss() {
-    String datoLeido = entradaDeDatos(); //  "556.7"
-    String datoLeido2 = entradaDeDatos();
+public class ejercicio4 {
+public Double ese() {
+    String datoLeido =  entradaDeDatos(); //  "556.7"
+
 
 		     
-		Double HoradeTrabajo = Double.parseDouble( datoLeido );  // 556.7
+		Double valor = Double.parseDouble( datoLeido );  // 556.7
                 
-                Double ValorDeHora = Double.parseDouble( datoLeido2 );  // 556.7
-                Double resultado = ValorDeHora*HoradeTrabajo;  //   (Int)numeroConComa  =>  556
+                
+                Double resultado= (valor-32)* 0.5556; 
+
        
                 return resultado;
     }
@@ -44,7 +42,6 @@ public String entradaDeDatos() {
 		
 		return cadena;
 	}
-   
     
     
 }

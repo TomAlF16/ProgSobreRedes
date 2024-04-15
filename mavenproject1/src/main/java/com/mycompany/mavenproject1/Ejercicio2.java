@@ -31,14 +31,43 @@ public class Ejercicio2 {
 //        return angulo3;
 
 
+    
+   public Double se() {
+    String datoLeido =  entradaDeDatos(); //  "556.7"
+    String datoLeido2 = entradaDeDatos();
 
-
-
-
-
-
-
+		     
+		Double angulo1 = Double.parseDouble( datoLeido );  // 556.7
+                
+                Double angulo2 = Double.parseDouble( datoLeido2 );  // 556.7
+                Double resultado = 180-(angulo1 + angulo2);  //   (Int)numeroConComa  =>  556
+       
+                return resultado;
+    }
+    
+public String entradaDeDatos() {
+		
+		String cadena = "";
+		try {
+			int Byte = -1;
+			while(    (Byte = System.in.read())  != '\n'    ) 
+			{
+				if( Byte != 13 )
+					cadena += (char)Byte;
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return cadena;
+	}
 
 
 }
+
+
+
+
+
 

@@ -12,17 +12,23 @@ import java.io.PrintStream;
  *
  * @author tafav
  */
-public class Ejercicio1 {
-    
-   public Double ss() {
-    String datoLeido = entradaDeDatos(); //  "556.7"
-    String datoLeido2 = entradaDeDatos();
+
+
+//Consigna:
+//Dada la superficie de un cuadrado (en m2), la computadora muestra su perímetro.
+
+
+public class Ejercicio3 {
+    public Double es() {
+    String datoLeido =  entradaDeDatos(); //  "556.7"
+
 
 		     
-		Double HoradeTrabajo = Double.parseDouble( datoLeido );  // 556.7
+		Double valor = Double.parseDouble( datoLeido );  // 556.7
                 
-                Double ValorDeHora = Double.parseDouble( datoLeido2 );  // 556.7
-                Double resultado = ValorDeHora*HoradeTrabajo;  //   (Int)numeroConComa  =>  556
+                
+                Double resultado= Math.sqrt(valor); 
+
        
                 return resultado;
     }
@@ -44,7 +50,6 @@ public String entradaDeDatos() {
 		
 		return cadena;
 	}
-   
     
     
 }

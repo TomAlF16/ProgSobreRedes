@@ -23,9 +23,15 @@ public class Guia {
 //        ps.print(42);
 //        ps.printf("El valor de PI es %.2f", Math.PI);
      Ejercicio1 ejercicio1 = new Ejercicio1();
+     Ejercicio2 ejercicio2 = new Ejercicio2();
+     Ejercicio3 ejercicio3 = new Ejercicio3();
+     ejercicio4 Ejercicio4 = new ejercicio4();
+//     System.out.println(ejercicio1.ss());
+//     System.out.println(ejercicio2.se());
+//     System.out.println(ejercicio3.es());
+       System.out.println(Ejercicio4.ese());
+       
 
-     
-//     System.out.println(Ejercicio1.calcularSueldoBruto(0, 0));
     }
 
 }
