@@ -26,11 +26,21 @@ public class Guia {
      Ejercicio2 ejercicio2 = new Ejercicio2();
      Ejercicio3 ejercicio3 = new Ejercicio3();
      ejercicio4 Ejercicio4 = new ejercicio4();
+     Ejercicio5 Ejercicio5 = new Ejercicio5();
+     
+     EjercicioH2 EjercicioH2 = new EjercicioH2();
 //     System.out.println(ejercicio1.ss());
 //     System.out.println(ejercicio2.se());
 //     System.out.println(ejercicio3.es());
-       System.out.println(Ejercicio4.ese());
-       
+//       System.out.println(Ejercicio4.ese());
+//System.out.println(Ejercicio5.puto());
+//System.out.println(Ejercicio6.wawa());
+System.out.println(EjercicioH2.Zn());
+//int numero= 11;
+//System.out.println(numero/numero);
+
+
+
 
     }
 
