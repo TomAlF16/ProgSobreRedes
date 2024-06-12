@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.mavenproject1;
-import java.io.PrintStream;
+package ejercicio3;
+
 import java.io.IOException;
 
 /**
  *
  * @author tafav
  */
-public class EjercicioA2 {
+public class Ejercicio3a {
     
     
     
@@ -20,12 +20,7 @@ public class EjercicioA2 {
     
     
     
-    
-    
-    
-    
-    
-    public String entradaDeDatos() {
+        public String entradaDeDatos() {
 		
 		String cadena = "";
 		try {
@@ -43,3 +38,6 @@ public class EjercicioA2 {
 		return cadena;
 	}
 }
+
+    
+

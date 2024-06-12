@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package com.mycompany.mavenproject1;
-
+import java.io.InputStreamReader;
 
 import java.io.PrintStream;
 
@@ -29,13 +29,26 @@ public class Guia {
      Ejercicio5 Ejercicio5 = new Ejercicio5();
      
      EjercicioH2 EjercicioH2 = new EjercicioH2();
-//     System.out.println(ejercicio1.ss());
+     EjercicioB2 EjercicioB2 = new EjercicioB2();
+      EjercicioC2 EjercicioC2 = new EjercicioC2();
+      EjercicioD2 EjercicioD2 = new EjercicioD2();
+      EjercicioG2 EjercicioG2 = new EjercicioG2();
+      EjercicioF2 EjercicioF2 = new EjercicioF2();
+//   System.out.println(ejercicio1.ss());
 //     System.out.println(ejercicio2.se());
 //     System.out.println(ejercicio3.es());
 //       System.out.println(Ejercicio4.ese());
 //System.out.println(Ejercicio5.puto());
 //System.out.println(Ejercicio6.wawa());
-System.out.println(EjercicioH2.Zn());
+//System.out.println(EjercicioB2.putdo());
+//System.out.println(EjercicioC2.purdo());
+//System.out.println(EjercicioG2.TablaNum());
+//System.out.println(EjercicioD2.purfddo());
+System.out.println(EjercicioF2.LongApell());
+
+
+
+
 //int numero= 11;
 //System.out.println(numero/numero);
 
