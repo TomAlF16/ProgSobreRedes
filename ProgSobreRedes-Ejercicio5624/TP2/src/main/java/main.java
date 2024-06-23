@@ -13,6 +13,7 @@ public class main {
 
 	static boolean continuar = true;
 	static PrintStream ps = new PrintStream(System.out);
+        String valores = null; 
 
  
 	public static void main(String[] args) {
@@ -38,8 +39,34 @@ public class main {
                                 precio = entradaDeDatos();
                                 ps.println("Ingrese el stock: ");
                                 stock = entradaDeDatos();
+                                
+                                
 
+                                        String archivo = "inventario.txt";
+                                 FileOutputStream fos = null;
+                                 String valores = Producto + ";" + precio+";"+stock;
+
+                                  try {
+                                            fos = new FileOutputStream(archivo); 
+                                            fos.write(valores.getBytes()); 
+                                            System.out.println("Producto añadido al inventario");
+                                        } catch (IOException e) {
+                                            e.printStackTrace(); 
+                                        } finally {
+                                            if (fos != null) {
+                                                try {
+                                                    fos.close(); 
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        }
 				
+                                
+                                
+                                
+                                
+                                
 				break;
 			case 2:
 				
@@ -91,6 +118,30 @@ public class main {
 
         return opcion;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    static String Proceso() {
+
+
+        return null;
+    }
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
