@@ -1,0 +1,8 @@
+Debido a un tema de tiempo y complicaciones con el trabajo, no pude hacerlo completo, quedando las primeras 5 funcionales
+Comandos:
+para banear un usuario
+/Ban Nombre del usuarios *tiempo en segundos*
+para el listado
+/list
+
+además que por alguna razon mi programa no muestra otros colores, por lo que en ese tema estuve a ciegas, cualquier cosa con eso digame
