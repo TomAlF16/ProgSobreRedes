@@ -1,4 +1,5 @@
-package socket;
+package javaapplication1;
+
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -11,7 +12,7 @@ import java.util.Base64;
 
 public class Cifrado {
 
-    private static final SecureRandom sr = new SecureRandom(); // Inicializar el generador de números aleatorios
+    private static final SecureRandom sr = new SecureRandom(); // Inicializar el generador de nï¿½meros aleatorios
 
     public static String encriptar(String clave, byte[] iv, String texto) {
         try {

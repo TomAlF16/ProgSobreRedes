@@ -1,4 +1,4 @@
-package socket;
+package javaapplication1;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

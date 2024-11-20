@@ -1,4 +1,4 @@
-package socket;
+package javaapplication1;
 
 public class mainCliente {
 
